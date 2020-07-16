@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="792.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Menu_Controller">
+   <children>
+      <Label fx:id="titleStatus" layoutX="188.0" layoutY="48.0" prefHeight="61.0" prefWidth="224.0" text="Wyszukiwarka plków">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Button layoutX="234.0" layoutY="181.0" mnemonicParsing="false" onAction="#button_chooseFile" prefHeight="61.0" prefWidth="149.0" text="Wybierz" />
+      <Button layoutX="234.0" layoutY="689.0" mnemonicParsing="false" onAction="#button_exit" prefHeight="61.0" prefWidth="149.0" text="Wyjdź" />
+      <TextField fx:id="fileExtension" layoutX="226.0" layoutY="120.0" prefHeight="38.0" prefWidth="209.0" promptText="pdf, txt, PNG, itp.">
+         <font>
+            <Font name="System Italic" size="17.0" />
+         </font></TextField>
+      <TextField fx:id="firstByteSeries" layoutX="226.0" layoutY="392.0" prefHeight="39.0" prefWidth="268.0" promptText="Wpisz tekst">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font></TextField>
+      <Label fx:id="titleStatus1" layoutX="26.0" layoutY="109.0" prefHeight="61.0" prefWidth="183.0" text="Rozszerzenie pliku" />
+      <Label fx:id="titleStatus11" layoutX="26.0" layoutY="381.0" prefHeight="61.0" prefWidth="183.0" text="Tekst do wyszukania" />
+      <TextField fx:id="secondByteSeries" layoutX="226.0" layoutY="458.0" prefHeight="39.0" prefWidth="268.0" promptText="Wpisz tekst">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font></TextField>
+      <Label fx:id="titleStatus111" layoutX="26.0" layoutY="447.0" prefHeight="61.0" prefWidth="183.0" text="Tekst do zastąpienia" />
+      <Button layoutX="234.0" layoutY="526.0" mnemonicParsing="false" onAction="#button_replace" prefHeight="61.0" prefWidth="149.0" text="Zastąp" />
+      <Label fx:id="errorStatus" alignment="CENTER" layoutX="17.0" layoutY="607.0" prefHeight="61.0" prefWidth="552.0" textAlignment="CENTER" textFill="#d70707">
+         <font>
+            <Font name="System Italic" size="20.0" />
+         </font></Label>
+      <ListView fx:id="listView" layoutX="62.0" layoutY="264.0" prefHeight="104.0" prefWidth="389.0" />
+      <Button layoutX="469.0" layoutY="297.0" mnemonicParsing="false" onAction="#button_delete" prefHeight="39.0" prefWidth="117.0" text="Usuń z listy" />
+   </children>
+</AnchorPane>
